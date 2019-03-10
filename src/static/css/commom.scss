@@ -1,0 +1,252 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    // text-decoration: underline;
+}
+$it:inherit;
+//宽高
+@mixin mr-ct($width, $height:auto) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: $width;
+    height: $height;
+}
+
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+//位置
+@mixin pn-ct($position, $top:50%, $left:50%, $lateX:-50%, $lateY:-50%) {
+    position: $position;
+    top: $top;
+    left: $left;
+    transform: translateX($lateX) translateY($lateY);
+}
+
+@mixin pn($position, $top:auto, $right:auto, $bottom:auto, $left:auto) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin df-ct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin df-vct{
+    display: flex;
+    align-items: center;
+}
+@mixin df-rct{
+    display: flex;
+    justify-content: center;
+}
+//字体
+@mixin ft($size, $line:inherit, $color:inherit, $align:inherit, $weight:inherit) {
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    text-align: $align;
+    font-weight: $weight;
+}
+
+//背景
+@mixin bg-s($url, $vertical:center, $level:center) {
+    background: url($url) $vertical $level no-repeat;
+    background-size: 100% auto;
+}
+
+.center{
+	@include mr-ct(1174px,auto);
+}
+.header{
+	.center{
+		overflow: hidden;
+		.left{
+			float: left;
+			.img{
+				padding:11px 0 11px 7px;
+				@include wh(384px,48px);
+			}
+		}
+		.link-list{
+			padding:0;
+			float:right;
+			.item{
+				float:left;
+				overflow: hidden;
+				.link{
+					box-sizing: border-box;
+					display: block;
+					@include ft(15px,70px,#4D4D4D,center);
+					width:92px;
+					&.active{
+					border-bottom:4px solid #3887DE;
+					}
+				}
+			}
+		}
+	}
+}
+.footer{
+	background: #292929;
+	.center{
+		overflow: hidden;
+		.left{
+			float:left;
+			width:370px;
+			.link-box{
+				display: flex;
+				padding:28px 14px 21px 0;
+				box-sizing: border-box;
+				height:76px;
+				border-bottom:1px solid #000;
+				.link-icon{
+					flex:none;
+					@include wh(26px,26px);
+				}
+				.link-list{
+					margin-left:12px;
+					flex:auto;
+					@include df-ct;
+					justify-content: space-between;
+					.item{
+						flex:none;
+						.link{
+							@include ft(14px,26px,#909090)
+						}
+					}
+				}
+			}
+			.phone-box{
+				.title{
+					margin-bottom:5px;
+					@include ft(14px,42px,#909090);
+				}
+				.phone{
+					padding-bottom:28px;
+					display: flex;
+					.phone-icon{
+						flex:none;
+						@include wh(31px,31px)
+					}
+					.info{
+						margin-left:15px;
+						flex:none;
+						@include ft(30px,1,#636363)
+					}
+				}
+			}
+		}
+		.right{
+			padding-top:33px;
+			float:right;
+			overflow: hidden;
+			.r-left{
+				float:left;
+				@include ft(14px,2,#909090);
+				.gz{
+					margin-bottom:13px;
+					display: flex;
+					.gz-info{
+						flex:none;
+						line-height:56px;
+					}
+					.wb{
+						margin-left:19px;
+						@include wh(56px,56px);
+						flex:none;
+					}
+					.wx{
+						margin-left:15px;
+						flex:none;
+						@include wh(56px,56px);
+					}
+				}
+			}
+			.r-right{
+				margin-left:50px;
+				float:right;
+				.qr{
+					display: block;
+					@include wh(104px,104px);
+				}
+				.hint{
+					@include ft(12px,32px,#909090,center);
+				}
+			}
+		}
+	}
+		.link-info{
+			@include df-rct;
+			background:#242424;
+			.info{
+				flex:none;
+				@include ft(12px,31px,#656464,center);
+			}
+		}
+}
+
+.commom-header{
+	box-sizing:border-box;
+	padding-top:52px;
+	height:162px;
+	border-bottom:1px solid #e5e5e5;
+	.commom-title{
+		@include ft(28px,40px,#494949);
+	}
+	.commom-hint{
+		@include ft(18px,1,#cecece);
+	}
+}
+#page{
+	overflow: hidden;
+	.item{
+		margin-left:12px;
+		margin-top:25px;
+		float: left;
+		padding:0 12px;
+		@include ft(14px,30px,#C0BFBF,center);
+		border:1px solid #e4e4e4;
+		&:nth-child(1){
+			margin-left:0;
+		}
+		&.active{
+			color:white;
+			background:#3887DE;
+		}
+	}
+}

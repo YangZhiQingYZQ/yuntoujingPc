@@ -1,0 +1,120 @@
+<!-- 头部数据 -->
+@@include("../components/commom/c-title.html",{
+"title":"云透镜",
+"linkSrc" : "../static/css/index.css"
+})
+<!-- header-nav栏 -->
+@@include("../components/commom/header.html",{
+"linkArr" : [{
+"link":"./index.html",
+"name":"首页"
+},
+{
+"link":"./product.html",
+"name":"产品服务"
+},
+{
+"link":"./case.html",
+"name":"案例中心"
+},
+{
+"link":"./news.html",
+"name":"新闻资讯"
+},
+{
+"link":"./about.html",
+"name":"关于我们"
+}]
+})
+<!-- center内容 -->
+@@include("../components/index.html",{
+"banner_arr":[
+"../static/public/images/index/banner_0.png",
+"../static/public/images/index/banner_1.png",
+"../static/public/images/index/banner_2.png",
+"../static/public/images/index/banner_3.png",
+"../static/public/images/index/banner_4.png"
+],
+"lev_0_title":"产品服务",
+"lev_0_hint":"Productions & Services",
+"lev_0_arr":["产品系列","服务方式","客户体验"],
+"lev_0_arr1":[{
+"title":"手机端查询",
+"text":"微信关注“云透镜”小程序，随时随地使用企业透镜、智能透镜查询所需信息，获取专业风控意见 >>>"
+},{
+"title":"企业套餐服务",
+"text":"通过API接口或使用我司云策系统在电脑端查询。根据企业经营情况灵活配置产品套餐 >>>"
+},{
+"title":"企业定制化咨询",
+"text":"根据企业实际业务需求，由业内资深风控、数据、技术等方面的专家，为企业提供定制 >>>"
+}],
+"lev_0_imgArr":[
+"../static/public/images/index/lev_0_img0.png",
+"../static/public/images/index/lev_0_img1.png",
+"../static/public/images/index/lev_0_img2.png"
+],
+"lev_0_btn" : "more",
+"lev_1_title":"案例中心",
+"lev_1_hint":"ase center",
+"lev_1_arr":["实体企业赊销管理","金融机构风险管理","个人用户求职管理"],
+"lev_1_imgArr":[
+"../static/public/images/index/lev_1_img0.png",
+"../static/public/images/index/lev_1_img1.png",
+"../static/public/images/index/lev_1_img2.png"
+],
+"lev_2_title":"新闻资讯",
+"lev_2_hint":"News and Information",
+"lev_2_arr":["公司新闻","行业新闻"],
+"lev_2_img":"../static/public/images/index/lev_2_pic.png",
+"lev_2_title1":"我国大数据风险管理不容忽视",
+"yaer":"2018",
+"month":"12-10",
+"item_info":"当前，我国信息化快速发展，人工智能正以前所未有的速度、广度和深度融入经济社会各个方面,大数据风险管理的。",
+"lev_2_btn":"READ MORE",
+"lev_3_title":"公司简介",
+"lev_3_hint":"Compan s Profile",
+"lev_3_arr":["产品系列","服务方式","客户体验"],
+"lev_3_title1":"公司简介",
+"lev_3_hint1":"Company",
+"lev_3_info":"深圳市云透镜科技有限公司致力于为企业及个人在赊销、借贷、投资、招聘、求职等领域提供数据风控服务，以减少社会交易成本，提高社会信用度、透明度。我们的目标是通过“云透镜”成为您身边最可信赖的风控卫士。",
+"lev_3_btn":"MORE",
+"lev_3_img":"../static/public/images/index/lev_3_pic.png"
+})
+<!-- footer-nav栏 -->
+@@include("../components/commom/footer.html",{
+"linkArr" : [{
+		"link":"./index.html",
+		"name":"网站首页"
+	},
+	{
+		"link":"./about.html",
+		"name":"关于我们"
+	},
+	{
+		"link":"./news.html",
+		"name":"新闻动态"
+	},
+	{
+		"link":"./about.html",
+		"name":"联系我们"
+	}],
+"linkIcon":"../static/public/images/commom/link-icon.png",
+"title" : "服务热线:",
+"phone" : "400-6020019",
+"phoneIcon" : "../static/public/images/commom/phone-icon.png",
+"gz":"关注我们：",
+"wxImg":"../static/public/images/commom/wx-icon.png",
+"wbImg":"../static/public/images/commom/wb-icon.png",
+"address":"公司地址：深圳市前海深港合作区前湾一路1号A栋201",
+"mail":"公司邮箱：YTJ@yuntoujing.cn",
+"qr":"../static/public/images/commom/qr.png",
+"hint":"扫一扫订阅号",
+"linkInfo":{
+"link":"./a",
+"info":"Copyright©2016 Coordinate Financial Services.All Rights Reserved. 粤ICP备16008904号"
+}
+})
+<!-- 加载的js -->
+@@include("../components/commom/c-footer.html",{
+"sArr" : ["../static/js/jquery-3.3.1.min.js","../static/js/swiper-3.4.2.jquery.min.js","../static/js/index.js"]
+})

@@ -1,0 +1,65 @@
+<!-- 头部数据 -->
+@@include("../components/commom/c-title.html",{
+	"linkSrc" : "../static/css/index.css"
+})
+<!-- header-nav栏 -->
+@@include("../components/commom/header.html",{
+	"linkArr" : [{
+		"link":"./a",
+		"name":"首页"
+	},
+	{
+		"link":"./a",
+		"name":"产品服务"
+	},
+	{
+		"link":"./a",
+		"name":"案例中心"
+	},
+	{
+		"link":"./a",
+		"name":"新闻资讯"
+	},
+	{
+		"link":"./a",
+		"name":"关于我们"
+	}]
+})
+<!-- footer-nav栏 -->
+@@include("../components/commom/footer.html",{
+	"linkArr" : [{
+		"link":"./a",
+		"name":"网站首页"
+	},
+	{
+		"link":"./a",
+		"name":"关于我们"
+	},
+	{
+		"link":"./a",
+		"name":"新闻动态"
+	},
+	{
+		"link":"./a",
+		"name":"联系我们"
+	}],
+	"linkIcon":"../static/public/images/commom/link-icon.png",
+	"title" : "服务热线:",
+	"phone" : "400-6020019",
+	"phoneIcon" : "../static/public/images/commom/phone-icon.png",
+	"gz":"关注我们：",
+	"wxImg":"../static/public/images/commom/wx-icon.png",
+	"wbImg":"../static/public/images/commom/wb-icon.png",
+	"address":"公司地址：深圳市前海深港合作区前湾一路1号A栋201",
+	"mail":"公司邮箱：YTJ@yuntoujing.cn",
+	"qr":"../static/public/images/commom/qr.png",
+	"hint":"扫一扫订阅号",
+	"linkInfo":{
+		"link":"./a",
+		"info":"Copyright©2016 Coordinate Financial Services.All Rights Reserved. 粤ICP备16008904号"
+	}
+})
+<!-- 加载的js -->
+@@include("../components/commom/c-footer.html",{
+	"sArr" : ["./a"]
+})

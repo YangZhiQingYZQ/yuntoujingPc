@@ -1,0 +1,19 @@
+<div class="toggle">
+	<img src="@@imgSrc" alt="" class="pic">
+	<div class="about">
+		<h3 class="about-title">@@title</h3>
+		<p class="info">@@info</p>
+		@@if(type == "one"){
+			<p class="info">@@info_1
+			<a href="" class = "info-link">@@info_2</a>
+				@@info_3
+			</p>
+		}
+		@@if(type == "tow"){
+			<p class="info_1">
+				@@info_1
+				<a href="" class = "info-link">@@info_2</a>
+			</p>
+		}
+	</div>
+</div>

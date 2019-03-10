@@ -1,0 +1,41 @@
+<div class="footer">
+	<div class="center">
+		<div class="left">
+			<div class="link-box">
+				<img src="@@linkIcon" alt="" class="link-icon">
+				<ul class="link-list">
+					@@for (var i = 0; linkArr.length > i;i++){
+						<li class="item">
+							<a href=`+linkArr[i].link+` class = "link">`+linkArr[i].name+`</a>
+						</li>
+					}
+				</ul>
+			</div>
+			<div class="phone-box">
+				<h3 class="title">@@title</h3>
+				<div class="phone">
+					<img src="@@phoneIcon" alt="" class="phone-icon">
+					<p class="info">@@phone</p>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="r-left">
+				<div class="gz">
+					<p class = "gz-info">@@gz</p>
+					<img src="@@wbImg" alt="" class="wb">
+					<img src="@@wxImg" alt="" class="wx">
+				</div>
+				<p class="address">@@address</p>
+				<p class="mail">@@mail</p>
+			</div>
+			<div class="r-right">
+				<img src="@@qr" alt="" class="qr">
+				<p class="hint">@@hint</p>
+			</div>
+		</div>
+	</div>
+	<div class="link-info">
+		<a class = "info center" href="@@linkInfo.link">@@linkInfo.info</a>
+	</div>
+</div>

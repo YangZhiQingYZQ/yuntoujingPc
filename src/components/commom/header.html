@@ -1,0 +1,14 @@
+<div class="header">
+	<div class="center">
+		<div class="left">
+			<img class ="img" src="../static/public/images/commom/logo.png" alt="">
+		</div>
+		<ul class="link-list">
+			@@for (var i = 0; linkArr.length > i;i++){
+				<li class="item">
+					<a class = "link" href= `+linkArr[i].link+` >`+linkArr[i].name+`</a>
+				</li>
+			}
+		</ul>
+	</div>
+</div>

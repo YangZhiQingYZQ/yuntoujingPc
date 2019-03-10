@@ -1,0 +1,17 @@
+<li class="case-item">
+	<div class="center">
+		@@if(title != ""){
+			<h3 class="item-title">@@title</h3>
+		}
+		<div class="ov">
+			<img src="@@imgSrc" alt="" class = "item-pic">
+			@@if(ov_title != ""){
+				<p class="ov-title">@@ov_title</p>
+			}
+			@@for(var i = 0; arr.length > i;i++){
+				<p class="info">`+arr[i]+`</p>
+			}
+			<p class="b-title">@@b_title</p>
+		</div>
+	</div>
+</li>

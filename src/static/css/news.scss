@@ -1,0 +1,70 @@
+@import "./commom.scss";
+.pic{
+	margin-top:-2px;
+	height:260px;
+	background: url("../public/images/news/banner.png") top center no-repeat;
+}
+.main{
+	overflow: hidden;
+	padding-top:34px;
+	.list{
+		float:left;
+		.item{
+			box-sizing:border-box;
+			padding:20px 0;
+			@include wh(154px,58px);
+			border-bottom:1px solid #e5e5e5;
+			&.active{
+				.info{
+					color:#3887DE;
+					padding-left:20px;
+					border-left:4px solid #3887de;
+				}
+			}
+			
+			.info{
+				position:relative;
+				padding-left:24px;
+				@include ft(18px,1,#494949);
+			}
+		}	
+	}
+}
+.content{
+	margin-left:40px;
+	width:980px;
+	float:left;
+	.new-item{
+		box-sizing: border-box;
+		padding:40px 10px 40px 0;
+		border-bottom:1px solid #e5e5e5;
+		overflow: hidden;
+		&:nth-child(1){
+			border:none;
+		}
+		.item-pic{
+			float:left;
+			@include wh(266px,175px);
+		}
+		.info{
+			margin-left:40px;
+			float:left;
+			width:637px;
+			.info-title{
+				@include ft(18px,74px,#494949,inherit,600);
+				.time{
+					float:right;
+					@include ft(37px,74px,#aaa,right,100);
+				}
+			}
+			.infos{
+				margin-top:4px;
+				@include ft(14px,30px,#838383,inherit,100);
+			}
+		}
+	}
+}
+.fy{
+	margin-left:194px;
+	height:519px;
+}

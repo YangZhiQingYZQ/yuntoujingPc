@@ -1,0 +1,72 @@
+@import "./commom.scss";
+
+.pic {
+	@include ft(14px, 45px, #747474);
+	background: #F5F5F5;
+
+	.mark {
+		color: #747474;
+	}
+}
+
+.main {
+	padding-top: 35px;
+	padding-bottom:160px;
+	overflow: hidden;
+	.left {
+		float: left;
+		width: 780px;
+
+		.img {
+			display: block;
+			margin-bottom: 40px;
+			@include wh(780px, 300px);
+		}
+
+		.left-title {
+			margin-bottom: 35px;
+			@include ft(22px, 1, #494949,inherit,600);
+
+			.hint {
+				margin-left: 22px;
+				@include ft(12px, 1, #909090);
+			}
+
+		}
+
+		.row-title {
+			@include ft(18px, 42px, #494949, center,600);
+		}
+
+		.row {
+			@include ft(14px, 24px, #909090);
+		}
+
+		.row-title1 {
+			@include ft(14px, 28px, #494949,inherit,600);
+		}
+	}
+
+	.right {
+		float: right;
+		width: 320px;
+
+		.right-title {
+			margin-bottom: 20px;
+			@include ft(14px, 1, #747474, inherit, 400);
+		}
+
+		.list {
+			.item{
+				padding:20px 0 22px;
+				border-top: 1px solid #e6e6e6;
+				.item-title{
+					@include ft(16px,30px,#494949);
+				}
+				.item-info{
+					@include ft(12px,28px,#909090);
+				}
+			}
+		}
+	}
+}

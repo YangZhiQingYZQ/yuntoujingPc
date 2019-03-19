@@ -4,11 +4,32 @@ body{
 	background: #fff;
 }
 #banner{
-	height:600px;
+	height:450px;
+	.swiper-items{
+		height:450px;
+	}
+	.swiper-slide:nth-child(5n-4) .swiper-items{
+		background: url("../public/images/index/banner_4.png") top center no-repeat;
+	}
+	.swiper-slide:nth-child(5n-3) .swiper-items{
+		background: url("../public/images/index/banner_0.png") top center no-repeat;
+	}
+	.swiper-slide:nth-child(5n-2) .swiper-items{
+		background: url("../public/images/index/banner_1.png") top center no-repeat;
+	}
+	.swiper-slide:nth-child(5n-1) .swiper-items{
+		background: url("../public/images/index/banner_2.png") top center no-repeat;
+	}
+	.swiper-slide:nth-child(5n) .swiper-items{
+		background: url("../public/images/index/banner_3.png") top center no-repeat;
+	}
 	.banner-img{
-		display: block;
-		width:100%;
-		height:100%;
+		position:absolute;
+		top:0;
+		left:-50%;
+		transform: translateX(-50%);
+		width:1174px;
+		height:450px;
 	}
 }
 .title{
@@ -17,10 +38,17 @@ body{
 .hint{
 	@include ft(20px,1,#c3c3c3,center);
 }
+.swiper-pagination .swiper-pagination-bullet{
+	opacity: .5;
+	background:white;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background:#007aff;
+}
 .lev-0{
 	box-sizing: border-box;
 	padding-top:56px;
-	height:784px;
+	height:750px;
 	.toggle{
 		height:130px;
 		@include df-ct;
@@ -28,7 +56,6 @@ body{
 		.item{
 			flex:none;
 			width:150px;
-			
 			&:nth-child(2){
 				position:relative;
 				margin:0 8px;
@@ -40,14 +67,8 @@ body{
 					content:"";
 					background: #E5E5E5;
 				}
-				&::after{
-					@include pn(absolute,12px,-3px);
-					@include wh(1px,20px);
-					content:"";
-					background: #E5E5E5;
-				}
 			}
-			&:hover{
+			&.active{
 				color:white;
 				background: #3887DE;
 				border-radius:3px;
@@ -56,8 +77,11 @@ body{
 	}
 	.a_toggle{
 		height:400px;
-		display: flex;
+		display: none;
 		justify-content: space-between;
+		&.active{
+			display: flex;
+		}
 		.item{
 			flex:none;
 			width:370px;
@@ -115,34 +139,43 @@ body{
 					}
 				}
 				.btn{
+					color:#3887DE;
 					left:10px;
 				}
 			}
 		}
 	}
 }
-.lev-1,.lev-2,.lev-3{
+.lev-2,.lev-3{
 	box-sizing: border-box;
 	padding-top:93px;
 }
 .lev-1{
+	box-sizing:border-box;
+	padding-top:60px;
 	height:660px;
 	background:url("../public/images/index/lev_1_bg.png") top center no-repeat;
 	.a_toggle{
-		position: relative;
+		// position: relative;
 		margin-top:54px;
 		height:310px;
 		.item{
+			position: relative;
+			margin:0 15px;
 			box-sizing: border-box;
-			float:left;
+			// float:left;
 			background:white;
 			@include wh(370px,auto);
-			&:nth-child(3n-1){
-				margin:0 30px;
+			.link{
+				@include pn(absolute,0,0,0,0);
+			}
+			.img-box{
+				@include wh(100%,240px);
+				overflow: hidden;
 			}
 			.img{
 				display: block;
-				@include wh(100%,240px);
+				@include wh(100%,100%);
 			}
 			.info{
 				padding-left:23px;
@@ -150,6 +183,9 @@ body{
 			}
 			&:hover{
 				border-bottom:8px solid #3887de;
+				.img{
+					transform: scale(1.1);
+				}
 			}
 		}
 	}
@@ -159,17 +195,24 @@ body{
 }
 #left{
 	@include wh(40px,50px);
-	@include pn(absolute,50%,auto,auto,-69px);
+	@include pn(absolute,50%,auto,auto,14.5px);
 	transform: translateY(-50%);
-	background: #909194;
+	background: rgba(0,0,0,.4);
+	z-index:9999;
 }
 #right{
 	@include wh(40px,50px);
-	@include pn(absolute,50%,-69px);
+	@include pn(absolute,50%,0);
 	transform: translateY(-50%);
-	background: #909194;
+	background: rgba(0,0,0,.4);
+	z-index:9999;
+}
+#left:hover,#right:hover{
+	background:rgba(56,135,222,.4);
 }
 .lev-2{
+	box-sizing: border-box;
+	padding-top:53px;
 	height:784px;
 	.toggle{
 		height:130px;
@@ -178,11 +221,9 @@ body{
 		.item{
 			flex:none;
 			width:150px;
-			
 			&:nth-child(2){
 				position:relative;
 				margin:0 8px;
-				// background: #3887DE;
 				border-radius:3px;
 				&::before{
 					@include pn(absolute,12px,auto,auto,-3px);
@@ -190,14 +231,8 @@ body{
 					content:"";
 					background: #E5E5E5;
 				}
-// 				&::after{
-// 					@include pn(absolute,12px,-3px);
-// 					@include wh(1px,20px);
-// 					content:"";
-// 					background: #E5E5E5;
-// 				}
 			}
-			&:hover{
+			&.active{
 				color:white;
 				background: #3887DE;
 				border-radius:3px;
@@ -205,19 +240,41 @@ body{
 		}
 	}
 	.ov{
+		display: none;
 		overflow: hidden;
+		&.active{
+			display: block;
+		}
 		.left{
 			float:left;
 			width:572px;
-			.pic{
+			.pic-box{
+				overflow: hidden;
 				margin-bottom:32px;
-				display: block;
 				@include wh(572px,200px);
+				.pic{
+					display: block;
+					@include wh(100%,100%);
+				}				
 			}
 			.lev_2_title1{
 				margin-bottom:-10px;
 				padding-left:11px;
 				@include ft(18px,1,#494949);
+			}
+			.lev2-title{
+				padding-top:9px;
+				@include ft(19px,1,inherit,inherit,400);
+			}
+			&:hover{
+				.pic{
+					transform: scale(1.1);
+				}
+				.lev-2-item{
+					.item-info{
+						color:#3887de;
+					}
+				}
 			}
 		}
 			.lev-2-item{
@@ -249,24 +306,37 @@ body{
 			float:right;
 			width:512px;
 			.lev-2-item{
+				padding-bottom:46px;
 				border-top:1px solid #e5e5e5;
 				border-bottom:1px solid #e5e5e5;
 				&:nth-child(2){
-					border:none;
+					border-top:none;
+				}
+				.lev2-title{
+					padding-top:9px;
+					@include ft(19px,67px,inherit,inherit,400);
+				}
+				.time-box{
+					margin:0;
 				}
 				.item-info{
 					float:right;
 					width:410px;
-					margin:31px 0;
+					margin:0;
 					padding-left:14px;
 					@include ft(14px,30px,#838383)
+				}
+				&:hover{
+					.item-info{
+						color:#3887de;
+					}
 				}
 			}
 		}
 	}
 	.btn{
 		box-sizing:border-box;
-		margin:47px auto 0;
+		margin:35px auto 0;
 		@include wh(630px,43px);
 		@include ft(18px,41px,#3887de,center);
 		border:1px solid #D7D7D7;
@@ -293,7 +363,6 @@ body{
 			.item{
 				flex:none;
 				width:150px;
-				
 				&:nth-child(2){
 					position:relative;
 					margin:0 8px;
@@ -312,7 +381,7 @@ body{
 						background: #E5E5E5;
 					}
 				}
-				&:hover{
+				&.active{
 					color:white;
 					background: #3887DE;
 					border-radius:3px;
@@ -326,6 +395,12 @@ body{
 				box-sizing: border-box;
 				padding-left:73px;
 				width:845px;
+				.toggle-lev3-item{
+					display: none;
+					&.active{
+						display: block;
+					}
+				}
 				.lev-3-title{
 					@include ft(24px,1,#3887de);
 				}

@@ -2,7 +2,8 @@
 	<div class="swiper-wrapper">
 		@@for(var i = 0; banner_arr.length > i;i++){
 		<div class="swiper-slide">
-			<img src=`+banner_arr[i]+` alt="" class="banner-img">
+			<!-- <img src=`+banner_arr[i]+` alt="" class="banner-img"> -->
+			<div class="swiper-items"></div>
 		</div>
 		}
 	</div>
@@ -11,7 +12,6 @@
 <div class="lev-0">
 	<div class="center">
 		<div class="title">@@lev_0_title</div>
-		<div class="hint">@@lev_0_hint</div>
 		<ul class="toggle" id="lev_0_toggle">
 			@@for(var i = 0;lev_0_arr.length > i ; i++){
 			<li class="item">`+lev_0_arr[i]+`</li>
@@ -33,19 +33,37 @@
 			</li>
 			}
 		</ul>
+		<ul class="a_toggle">
+			@@for(var i = 0; lev_0_arr2.length > i ; i++){
+			<li class="item">
+				<div class="img-box">
+					<img src=`+lev_0_imgArr1[i]+` class="img" />
+				</div>
+				<div class="info">
+					<h3 class="info-title">`+lev_0_arr2[i].title+`</h3>
+					<p class="text">`+lev_0_arr2[i].text+`</p>
+				</div>
+				<div class="btn">
+					<p class="btn-text">@@lev_0_btn</p>
+				</div>
+			</li>
+			}
+		</ul>
 	</div>
 </div>
 <div class="lev-1">
 	<div class="center">
 		<div class="title">@@lev_1_title</div>
-		<div class="hint">@@lev_1_hint</div>
 	</div>
 	<div class="center" id="ss">
-		<div class="swiper-container a_toggle center" id = "swiper-lev">
+		<div class="swiper-container a_toggle center" id="swiper-lev">
 			<div class="swiper-wrapper">
 				@@for(var i = 0; lev_1_arr.length > i ; i++){
-				<div class="item">
-					<img src=`+lev_1_imgArr[i]+` class="img" />
+				<div class="item swiper-slide">
+					<a href="./case.html" class="link"></a>
+					<div class="img-box">
+						<img src=`+lev_1_imgArr[i]+` class="img" />
+					</div>
 					<div class="info">`+lev_1_arr[i]+`</div>
 				</div>
 				}
@@ -54,24 +72,58 @@
 			<div class="swiper-pagination-lev"></div>
 			<!-- 如果需要导航按钮 -->
 		</div>
-			<img src="../static/public/images/index/left-icon.png" alt="" id = "left">
-			<img src="../static/public/images/index/right-icon.png" alt="" id ="right">		
+		<img src="../static/public/images/index/left-icon.png" alt="" id="left">
+		<img src="../static/public/images/index/right-icon.png" alt="" id="right">
 	</div>
 </div>
 <div class="lev-2">
 	<div class="center">
 		<div class="title">@@lev_2_title</div>
-		<div class="hint">@@lev_2_hint</div>
-		<ul class="toggle">
+		<ul class="toggle" id="lev_2_nav">
 			@@for(var i = 0;lev_2_arr.length > i ; i++){
 			<li class="item">`+lev_2_arr[i]+`</li>
 			}
 		</ul>
 		<div class="center ov">
 			<div class="left">
-				<img src="@@lev_2_img" alt="" class="pic">
-				<h3 class="lev2-title">@@lev_2_title1</h3>
+				<div class="pic-box">
+					<img src="@@lev_2_img1" alt="" class="pic">
+				</div>
+				<h3 class="lev2-title">@@lev_2_title4</h3>
+				<div class="lev-2-item" id="lev-2-item">
+					<div class="time-box">
+						<div class="year">@@yaer_2</div>
+						<div class="month">@@month_2</div>
+					</div>
+					<div class="item-info">@@item_info_2</div>
+				</div>
+			</div>
+			<div class="right">
 				<div class="lev-2-item">
+					<h3 class="lev2-title">@@lev_2_title5</h3>
+					<div class="time-box">
+						<div class="year">@@yaer_3</div>
+						<div class="month">@@month_3</div>
+					</div>
+					<div class="item-info">@@item_info_3</div>
+				</div>
+				<div class="lev-2-item">
+					<h3 class="lev2-title">@@lev_2_title6</h3>
+					<div class="time-box">
+						<div class="year">@@yaer_4</div>
+						<div class="month">@@month_4</div>
+					</div>
+					<div class="item-info">@@item_info_4</div>
+				</div>
+			</div>
+		</div>
+		<div class="center ov">
+			<div class="left">
+				<div class="pic-box">
+					<img src="@@lev_2_img" alt="" class="pic">
+				</div>
+				<h3 class="lev2-title">@@lev_2_title1</h3>
+				<div class="lev-2-item" id="lev-2-item">
 					<div class="time-box">
 						<div class="year">@@yaer</div>
 						<div class="month">@@month</div>
@@ -81,25 +133,20 @@
 			</div>
 			<div class="right">
 				<div class="lev-2-item">
+					<h3 class="lev2-title">@@lev_2_title2</h3>
 					<div class="time-box">
-						<div class="year">@@yaer</div>
-						<div class="month">@@month</div>
+						<div class="year">@@yaer_0</div>
+						<div class="month">@@month_0</div>
 					</div>
-					<div class="item-info">@@item_info</div>
+					<div class="item-info">@@item_info_0</div>
 				</div>
 				<div class="lev-2-item">
+					<h3 class="lev2-title">@@lev_2_title3</h3>
 					<div class="time-box">
-						<div class="year">@@yaer</div>
-						<div class="month">@@month</div>
+						<div class="year">@@yaer_1</div>
+						<div class="month">@@month_1</div>
 					</div>
-					<div class="item-info">@@item_info</div>
-				</div>
-				<div class="lev-2-item">
-					<div class="time-box">
-						<div class="year">@@yaer</div>
-						<div class="month">@@month</div>
-					</div>
-					<div class="item-info">@@item_info</div>
+					<div class="item-info">@@item_info_1</div>
 				</div>
 			</div>
 		</div>
@@ -109,18 +156,28 @@
 <div class="lev-3">
 	<div class="center">
 		<div class="title">@@lev_3_title</div>
-		<div class="hint">@@lev_3_hint</div>
 		<div class="center bg">
-			<ul class="toggle">
+			<ul class="toggle" id="lev_3_nav">
 				@@for(var i = 0;lev_3_arr.length > i ; i++){
 				<li class="item">`+lev_3_arr[i]+`</li>
 				}
 			</ul>
 			<div class="ov">
 				<div class="left">
-					<h3 class="lev-3-title">@@lev_3_title1</h3>
-					<p class="lev-3-hint">@@lev_3_hint1</p>
-					<div class="info">@@lev_3_info</div>
+					<ul class="toggle-lev3">
+						<li class="toggle-lev3-item active">
+							<h3 class="lev-3-title">@@lev_3_title1</h3>
+							<div class="info">@@lev_3_info</div>
+						</li>
+						<li class="toggle-lev3-item">
+							<h3 class="lev-3-title">@@lev_3_title2</h3>
+							<div class="info">@@lev_3_info2</div>
+						</li>
+						<li class="toggle-lev3-item">
+							<h3 class="lev-3-title">@@lev_3_title3</h3>
+							<div class="info">@@lev_3_info3</div>
+						</li>
+					</ul>
 					<div class="btn">@@lev_3_btn</div>
 				</div>
 				<img src="@@lev_3_img" alt="" class="right">

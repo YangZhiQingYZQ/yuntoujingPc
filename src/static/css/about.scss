@@ -5,7 +5,7 @@
 }
 
 .content{
-	height:956px;
+	min-height:746px;
 }
 .main{
 	padding-top:39px;
@@ -32,12 +32,22 @@
 				padding-left:24px;
 				@include ft(18px,1,#494949);
 			}
+			&:hover{
+				.info{
+					color:#3887DE;
+					padding-left:20px;
+					border-left:4px solid #3887de;
+				}
+			}
 		}	
 	}
 	.toggle{
 		display: none;
 		float:right;
 		overflow: hidden;
+		&:last-child{
+			padding-bottom:100px;
+		}
 		.pic{
 			float:left;
 			margin-right:32px;
@@ -69,6 +79,7 @@
 		.centers{
 			padding-top:66px;
 			overflow: hidden;
+			
 			.us{
 				float:left;
 				@include wh(200px,auto);
@@ -99,4 +110,12 @@
 				}
 		}
 	}
+}
+.animation{
+	animation: myfirst 1s ease;
+}
+@keyframes myfirst
+{
+from {margin-top:100px;opacity: 0;}
+to {margin-top:0;opacity: 1;}
 }

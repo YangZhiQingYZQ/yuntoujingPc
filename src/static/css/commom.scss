@@ -114,7 +114,12 @@ $it:inherit;
 					@include ft(15px,70px,#4D4D4D,center);
 					width:92px;
 					&.active{
-					border-bottom:4px solid #3887DE;
+						color:#3887DE;
+						border-bottom:4px solid #3887DE;
+					}
+					&:hover{
+						color:#3887DE;
+						border-bottom:4px solid #3887DE;
 					}
 				}
 			}
@@ -129,14 +134,23 @@ $it:inherit;
 			float:left;
 			width:370px;
 			.link-box{
+				position:relative;
 				display: flex;
 				padding:28px 14px 21px 0;
 				box-sizing: border-box;
 				height:76px;
-				border-bottom:1px solid #000;
+				border-bottom:1px solid rgba(0,0,0,.3);
 				.link-icon{
 					flex:none;
 					@include wh(26px,26px);
+				}
+				.sjx-icon{
+					@include pn(absolute,54%,auto,auto,11px);
+					transform: translateY(-50%);
+					border-left:7px solid #292929;
+					border-top:5.5px solid rgba(0,0,0,0);
+					border-bottom:5.5px solid rgba(0,0,0,0);
+					border-right:7px solid rgba(0,0,0,0);
 				}
 				.link-list{
 					margin-left:12px;

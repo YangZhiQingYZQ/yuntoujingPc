@@ -1,7 +1,7 @@
 <!-- 头部数据 -->
 @@include("../components/commom/c-title.html",{
-	"title":"产品中心",
-	"linkSrc" : "../static/css/product.css"
+"title":"产品中心",
+"linkSrc" : "../static/css/product.css"
 })
 <!-- header-nav栏 -->
 @@include("../components/commom/header.html",{
@@ -26,119 +26,97 @@
 "name":"关于我们"
 }]
 })
-<div class="pic"></div>
-<div class="center">
-	@@include("../components/commom/title.html",{
+<div class="animation">
+	<div class="pic"></div>
+	<div class="center">
+		@@include("../components/commom/title.html",{
 		"title":"产品服务",
 		"hint":"Productions & Services"
-	})
-	<div class="main" id = "main">
-		@@include("../components/commom/list.html",{
-			"li_arr" : ["产品系列","服务方式","客户体验"]
 		})
-		<ul class="content" id = "khty">
-			@@include("../components/product-item.html",{
+		<div class="main" id="main">
+			@@include("../components/commom/list.html",{
+			"li_arr" : ["服务内容","产品特色"]
+			})
+			<ul class="content" id="khty">
+				@@include("../components/product-item.html",{
 				"imgSrc":"../static/public/images/product/khty_0.png",
 				"title":"免费体验",
-				"hint":"Free Trail",
 				"info":"注册微信小程序即可免费获得透镜分，体验我们的数据风控服务;"
-			})
-			@@include("../components/product-item.html",{
+				})
+				@@include("../components/product-item.html",{
 				"imgSrc":"../static/public/images/product/khty_1.png",
 				"title":"分享有奖",
-				"hint":"Share to Win",
 				"info":"透镜分不足时，可充值或对外分享云透镜获取透镜分，如对方充值还可获得云币，用于购买透镜分或提现;"
-			})
-			@@include("../components/product-item.html",{
+				})
+				@@include("../components/product-item.html",{
 				"imgSrc":"../static/public/images/product/khty_2.png",
 				"title":"人工咨询",
-				"hint":"Customer Services",
 				"info":"如对信息庞杂、专业术语的云透镜分析报告不明白，有专业透镜分析师提供人工咨询。"
-			})
-		</ul>
-		<ul class="content" id = "server">
-			@@include("../components/product-item.html",{
+				})
+			</ul>
+			<ul class="content" id="server">
+				@@include("../components/product-item.html",{
 				"imgSrc":"../static/public/images/product/server_0.png",
 				"title":"手机端查询",
-				"hint":"Mobile inquiry",
 				"info":"微信关注“云透镜”小程序，随时随地便捷使用企业透镜、智能透镜查询所需信息，获取专业风控意见; 同时，快捷使用证照透镜识别、管理常用证照材料，随身携带一个属于自己的专用数据库。"
-			})
-			@@include("../components/product-item.html",{
+				})
+				@@include("../components/product-item.html",{
 				"imgSrc":"../static/public/images/product/server_1.png",
 				"title":"企业套餐服务",
-				"hint":"Enterprise package service",
 				"info":"通过API接口或使用我司云策系统在电脑端查询。根据企业经营情况灵活配置产品套餐，以更优惠的价格、更直观的数据BI、专业透镜师人工咨询，为企业在赊销、投资风险及发票验真、云眼监控等方面提供风险管理工具和建议，为企业随时随地配置一个忠诚专业的风控卫士"
-			})
-			@@include("../components/product-item.html",{
+				})
+				@@include("../components/product-item.html",{
 				"imgSrc":"../static/public/images/product/server_2.png",
 				"title":"企业定制化咨询",
-				"hint":"Customized Consulting",
 				"info":"根据企业实际业务需求，由业内资深风控、数据、技术等方面的专家，为企业提供定制化风险管理、数据建模、评分体系等方面的服务，尤其是小微企业经营贷及供应链金融业务。"
-			})
-		</ul>
-		<ul class="content" id = "product">
-			@@include("../components/product-item.html",{
-				"imgSrc":"../static/public/images/product/product_0.png",
-				"title":"诚信透镜",
-				"hint":"Integrity of the lens",
-				"info":"通过整合企业工商、投资、征信、涉诉、行政、知识产权、财务经营、行业分析等信息，进行多层级、多维度的数据提取、统计、整合、计算、分析后，输出评分结果及决策建议，为企业及个人决策提供专业好帮手。"
-			})
-			@@include("../components/product-item.html",{
-				"imgSrc":"../static/public/images/product/product_1.png",
-				"title":"证照透镜",
-				"hint":"Licenses lens",
-				"info":"结合人工智能OCR技术，有效识别身份证、银行卡、营业执照、名片、增值税发票等证照凭证，快捷完成验真，进行分类管理，随时便捷调用历史数据，实现无纸化办公，减少案牍劳形。"
-			})
-		</ul>
-	</div>
-	<div class="fy">
-		<ul class="page" id = "page">
-			<li class="item active">首页</li>
-			<li class="item">上一页</li>
-			<li class="item">1</li>
-			<li class="item">2</li>
-			<li class="item">3</li>
-			<li class="item">4</li>
-			<li class="item">5</li>
-			<li class="item">下一页</li>
-		</ul>
+				})
+			</ul>
+		</div>
+		<div class="fy">
+			<ul class="page" id="page">
+				<li class="item active">首页</li>
+				<li class="item">上一页</li>
+				<li class="item">1</li>
+				<li class="item">下一页</li>
+			</ul>
+		</div>
 	</div>
 </div>
 <!-- footer-nav栏 -->
 @@include("../components/commom/footer.html",{
-	"linkArr" : [{
-		"link":"./index.html",
-		"name":"网站首页"
-	},
-	{
-		"link":"./about.html",
-		"name":"关于我们"
-	},
-	{
-		"link":"./news.html",
-		"name":"新闻动态"
-	},
-	{
-		"link":"./about.html",
-		"name":"联系我们"
-	}],
-	"linkIcon":"../static/public/images/commom/link-icon.png",
-	"title" : "服务热线:",
-	"phone" : "400-6020019",
-	"phoneIcon" : "../static/public/images/commom/phone-icon.png",
-	"gz":"关注我们：",
-	"wxImg":"../static/public/images/commom/wx-icon.png",
-	"wbImg":"../static/public/images/commom/wb-icon.png",
-	"address":"公司地址：深圳市前海深港合作区前湾一路1号A栋201",
-	"mail":"公司邮箱：YTJ@yuntoujing.cn",
-	"qr":"../static/public/images/commom/qr.png",
-	"hint":"扫一扫订阅号",
-	"linkInfo":{
-		"link":"./a",
-		"info":"Copyright©2016 Coordinate Financial Services.All Rights Reserved. 粤ICP备16008904号"
-	}
+"linkArr" : [{
+"link":"./index.html",
+"name":"网站首页"
+},
+{
+"link":"./about.html",
+"name":"关于我们"
+},
+{
+"link":"./news.html",
+"name":"新闻动态"
+},
+{
+"link":"./about.html?type=4",
+"name":"联系我们"
+}],
+"linkIcon":"../static/public/images/commom/link-icon.png",
+"title" : "服务热线:",
+"phone" : "400-602-0019",
+"phoneIcon" : "../static/public/images/commom/phone-icon.png",
+"gz":"关注我们：",
+"wxImg":"../static/public/images/commom/gzh-icon.png",
+"wbImg":"../static/public/images/commom/xcx-icon.png",
+"address":"公司地址：深圳市南山区南山街道向南社区南山大道1153号天源大厦A栋408",
+"mail":"公司邮箱：YTJ@yuntoujing.cn",
+"qr":"../static/public/images/commom/qr.png",
+"hint":"扫一扫订阅号",
+"linkInfo":{
+"link":"./a",
+"info":"Copyright©2019 Coordinate Financial Services.All Rights Reserved. 粤ICP备18138710号-1"
+}
 })
 <!-- 加载的js -->
 @@include("../components/commom/c-footer.html",{
-	"sArr" : ["../static/js/jquery-3.3.1.min.js","../static/js/swiper-3.4.2.jquery.min.js","../static/js/product.js"]
+"sArr" : ["../static/js/jquery-3.3.1.min.js","../static/js/swiper-3.4.2.jquery.min.js","../static/js/product.js"]
 })

@@ -28,6 +28,13 @@
 				padding-left:24px;
 				@include ft(18px,1,#494949);
 			}
+			&:hover{
+				.info{
+					color:#3887DE;
+					padding-left:20px;
+					border-left:4px solid #3887de;
+				}
+			}
 		}
 	}
 	.content{
@@ -78,4 +85,12 @@
 .fy{
 	margin-left:194px;
 	height:211px;
+}
+.animation{
+	animation: myfirst 1s ease;
+}
+@keyframes myfirst
+{
+from {margin-top:100px;opacity: 0;}
+to {margin-top:0;opacity: 1;}
 }

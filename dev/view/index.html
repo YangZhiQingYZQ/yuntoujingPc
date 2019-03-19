@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=0.1,minimun-scale=1.0,maximum-scale=1.0,user-scalable=no">
 		<title>云透镜</title>
 		<link rel="stylesheet" href=../static/css/index.css>
 	</head>
@@ -12,7 +13,7 @@
 <div class="header">
 	<div class="center">
 		<div class="left">
-			<img class ="img" src="../static/public/images/commom/logo.png" alt="">
+			<img class ="img" src="../static/public/images/commom/logo.png" alt="" id = "logo">
 		</div>
 		<ul class="link-list">
 			
@@ -44,23 +45,28 @@
 	<div class="swiper-wrapper">
 		
 		<div class="swiper-slide">
-			<img src=../static/public/images/index/banner_0.png alt="" class="banner-img">
+			<!-- <img src=../static/public/images/index/banner_0.png alt="" class="banner-img"> -->
+			<div class="swiper-items"></div>
 		</div>
 		
 		<div class="swiper-slide">
-			<img src=../static/public/images/index/banner_1.png alt="" class="banner-img">
+			<!-- <img src=../static/public/images/index/banner_1.png alt="" class="banner-img"> -->
+			<div class="swiper-items"></div>
 		</div>
 		
 		<div class="swiper-slide">
-			<img src=../static/public/images/index/banner_2.png alt="" class="banner-img">
+			<!-- <img src=../static/public/images/index/banner_2.png alt="" class="banner-img"> -->
+			<div class="swiper-items"></div>
 		</div>
 		
 		<div class="swiper-slide">
-			<img src=../static/public/images/index/banner_3.png alt="" class="banner-img">
+			<!-- <img src=../static/public/images/index/banner_3.png alt="" class="banner-img"> -->
+			<div class="swiper-items"></div>
 		</div>
 		
 		<div class="swiper-slide">
-			<img src=../static/public/images/index/banner_4.png alt="" class="banner-img">
+			<!-- <img src=../static/public/images/index/banner_4.png alt="" class="banner-img"> -->
+			<div class="swiper-items"></div>
 		</div>
 		
 	</div>
@@ -69,14 +75,11 @@
 <div class="lev-0">
 	<div class="center">
 		<div class="title">产品服务</div>
-		<div class="hint">Productions & Services</div>
 		<ul class="toggle" id="lev_0_toggle">
 			
-			<li class="item">产品系列</li>
+			<li class="item">服务内容</li>
 			
-			<li class="item">服务方式</li>
-			
-			<li class="item">客户体验</li>
+			<li class="item">产品特色</li>
 			
 		</ul>
 		<ul class="a_toggle">
@@ -121,30 +124,96 @@
 			</li>
 			
 		</ul>
+		<ul class="a_toggle">
+			
+			<li class="item">
+				<div class="img-box">
+					<img src=../static/public/images/index/lev_0_img3.png class="img" />
+				</div>
+				<div class="info">
+					<h3 class="info-title">免费体验</h3>
+					<p class="text">注册微信小程序即可免费获得透镜分，体验我们的数据风控服务; >>></p>
+				</div>
+				<div class="btn">
+					<p class="btn-text">more</p>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="img-box">
+					<img src=../static/public/images/index/lev_0_img4.png class="img" />
+				</div>
+				<div class="info">
+					<h3 class="info-title">分享有奖</h3>
+					<p class="text">透镜分不足时，可充值或对外分享云透镜获取透镜分，如对方充值还可获得云币，>>></p>
+				</div>
+				<div class="btn">
+					<p class="btn-text">more</p>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="img-box">
+					<img src=../static/public/images/index/lev_0_img5.png class="img" />
+				</div>
+				<div class="info">
+					<h3 class="info-title">人工咨询</h3>
+					<p class="text">如对信息庞杂、专业术语的云透镜分析报告不明白，有专业透镜分析师提供人工咨询 >>></p>
+				</div>
+				<div class="btn">
+					<p class="btn-text">more</p>
+				</div>
+			</li>
+			
+		</ul>
 	</div>
 </div>
 <div class="lev-1">
 	<div class="center">
 		<div class="title">案例中心</div>
-		<div class="hint">ase center</div>
 	</div>
 	<div class="center" id="ss">
-		<div class="swiper-container a_toggle center" id = "swiper-lev">
+		<div class="swiper-container a_toggle center" id="swiper-lev">
 			<div class="swiper-wrapper">
 				
-				<div class="item">
-					<img src=../static/public/images/index/lev_1_img0.png class="img" />
+				<div class="item swiper-slide">
+					<a href="./case.html" class="link"></a>
+					<div class="img-box">
+						<img src=../static/public/images/index/lev_1_img3.png class="img" />
+					</div>
+					<div class="info">企业用户发票验证</div>
+				</div>
+				
+				<div class="item swiper-slide">
+					<a href="./case.html" class="link"></a>
+					<div class="img-box">
+						<img src=../static/public/images/index/lev_1_img0.png class="img" />
+					</div>
 					<div class="info">实体企业赊销管理</div>
 				</div>
 				
-				<div class="item">
-					<img src=../static/public/images/index/lev_1_img1.png class="img" />
+				<div class="item swiper-slide">
+					<a href="./case.html" class="link"></a>
+					<div class="img-box">
+						<img src=../static/public/images/index/lev_1_img1.png class="img" />
+					</div>
 					<div class="info">金融机构风险管理</div>
 				</div>
 				
-				<div class="item">
-					<img src=../static/public/images/index/lev_1_img2.png class="img" />
+				<div class="item swiper-slide">
+					<a href="./case.html" class="link"></a>
+					<div class="img-box">
+						<img src=../static/public/images/index/lev_1_img2.png class="img" />
+					</div>
 					<div class="info">个人用户求职管理</div>
+				</div>
+				
+				<div class="item swiper-slide">
+					<a href="./case.html" class="link"></a>
+					<div class="img-box">
+						<img src=../static/public/images/index/lev_1_img4.png class="img" />
+					</div>
+					<div class="info">个人用户名片管理</div>
 				</div>
 				
 			</div>
@@ -152,15 +221,14 @@
 			<div class="swiper-pagination-lev"></div>
 			<!-- 如果需要导航按钮 -->
 		</div>
-			<img src="../static/public/images/index/left-icon.png" alt="" id = "left">
-			<img src="../static/public/images/index/right-icon.png" alt="" id ="right">		
+		<img src="../static/public/images/index/left-icon.png" alt="" id="left">
+		<img src="../static/public/images/index/right-icon.png" alt="" id="right">
 	</div>
 </div>
 <div class="lev-2">
 	<div class="center">
 		<div class="title">新闻资讯</div>
-		<div class="hint">News and Information</div>
-		<ul class="toggle">
+		<ul class="toggle" id="lev_2_nav">
 			
 			<li class="item">公司新闻</li>
 			
@@ -169,9 +237,44 @@
 		</ul>
 		<div class="center ov">
 			<div class="left">
-				<img src="../static/public/images/index/lev_2_pic.png" alt="" class="pic">
-				<h3 class="lev2-title">我国大数据风险管理不容忽视</h3>
+				<div class="pic-box">
+					<img src="../static/public/images/index/lev_2_pic1.png" alt="" class="pic">
+				</div>
+				<h3 class="lev2-title">山东和美集团供应链金融风控咨询服务项目启动</h3>
+				<div class="lev-2-item" id="lev-2-item">
+					<div class="time-box">
+						<div class="year">2019</div>
+						<div class="month">3-16</div>
+					</div>
+					<div class="item-info">2019年1月，云透镜风控专家与金蝶征信合作，为山东和美集团的供应链金融业务提供一系列的信贷操作</div>
+				</div>
+			</div>
+			<div class="right">
 				<div class="lev-2-item">
+					<h3 class="lev2-title">云透镜与海尔集团旗下万链指数签署战略合作协议</h3>
+					<div class="time-box">
+						<div class="year">2019</div>
+						<div class="month">3-16</div>
+					</div>
+					<div class="item-info">2019年3月，深圳市云透镜科技有限公司与万链指数(青岛)信息科技有限公司签署战略合作协议。</div>
+				</div>
+				<div class="lev-2-item">
+					<h3 class="lev2-title">关于iPhone手机付费购买云透镜小程序的通知</h3>
+					<div class="time-box">
+						<div class="year">2019</div>
+						<div class="month">1-25</div>
+					</div>
+					<div class="item-info">亲爱的用户，您好！云透镜小程序正式上线，目前只接受安卓手机的购买支付。</div>
+				</div>
+			</div>
+		</div>
+		<div class="center ov">
+			<div class="left">
+				<div class="pic-box">
+					<img src="../static/public/images/index/lev_2_pic.png" alt="" class="pic">
+				</div>
+				<h3 class="lev2-title">我国大数据风险管理不容忽视</h3>
+				<div class="lev-2-item" id="lev-2-item">
 					<div class="time-box">
 						<div class="year">2018</div>
 						<div class="month">12-10</div>
@@ -181,25 +284,20 @@
 			</div>
 			<div class="right">
 				<div class="lev-2-item">
+					<h3 class="lev2-title">大数据应用于农业的十大案例</h3>
 					<div class="time-box">
 						<div class="year">2018</div>
-						<div class="month">12-10</div>
+						<div class="month">10-19</div>
 					</div>
-					<div class="item-info">当前，我国信息化快速发展，人工智能正以前所未有的速度、广度和深度融入经济社会各个方面,大数据风险管理的。</div>
+					<div class="item-info">基于物联网等技术的应用，农业领域积累了大量的数据，为大数据应用于农业奠定了基础。从国内国际的发展来看，大数据正在...</div>
 				</div>
 				<div class="lev-2-item">
+					<h3 class="lev2-title">互联网金融的风控必然以数据为核心</h3>
 					<div class="time-box">
 						<div class="year">2018</div>
-						<div class="month">12-10</div>
+						<div class="month">7-02</div>
 					</div>
-					<div class="item-info">当前，我国信息化快速发展，人工智能正以前所未有的速度、广度和深度融入经济社会各个方面,大数据风险管理的。</div>
-				</div>
-				<div class="lev-2-item">
-					<div class="time-box">
-						<div class="year">2018</div>
-						<div class="month">12-10</div>
-					</div>
-					<div class="item-info">当前，我国信息化快速发展，人工智能正以前所未有的速度、广度和深度融入经济社会各个方面,大数据风险管理的。</div>
+					<div class="item-info">互联网金融平台的风控应该围绕互联网特性展开，而互联网最大的特性就是数据，也就是大家常说的大数据。真正的互联网金...</div>
 				</div>
 			</div>
 		</div>
@@ -209,22 +307,32 @@
 <div class="lev-3">
 	<div class="center">
 		<div class="title">公司简介</div>
-		<div class="hint">Compan s Profile</div>
 		<div class="center bg">
-			<ul class="toggle">
+			<ul class="toggle" id="lev_3_nav">
 				
-				<li class="item">产品系列</li>
+				<li class="item">公司简介</li>
 				
-				<li class="item">服务方式</li>
+				<li class="item">团队介绍</li>
 				
-				<li class="item">客户体验</li>
+				<li class="item">商务合作</li>
 				
 			</ul>
 			<div class="ov">
 				<div class="left">
-					<h3 class="lev-3-title">公司简介</h3>
-					<p class="lev-3-hint">Company</p>
-					<div class="info">深圳市云透镜科技有限公司致力于为企业及个人在赊销、借贷、投资、招聘、求职等领域提供数据风控服务，以减少社会交易成本，提高社会信用度、透明度。我们的目标是通过“云透镜”成为您身边最可信赖的风控卫士。</div>
+					<ul class="toggle-lev3">
+						<li class="toggle-lev3-item active">
+							<h3 class="lev-3-title">公司简介</h3>
+							<div class="info">深圳市云透镜科技有限公司致力于为企业及个人在赊销、借贷、投资、招聘、求职等领域提供数据风控服务，以减少社会交易成本，提高社会信用度、透明度。我们的目标是通过“云透镜”成为您身边最可信赖的风控卫士。</div>
+						</li>
+						<li class="toggle-lev3-item">
+							<h3 class="lev-3-title">团队介绍</h3>
+							<div class="info">我们的团队来自于工商银行、招商银行、阿里巴巴、供应链金融、消费金融等国内知名金融、数据及技术机构，60%以上人员具备8年以上大中型项目贷款、中小企小微经营贷、消费信贷等授信审批经验。</div>
+						</li>
+						<li class="toggle-lev3-item">
+							<h3 class="lev-3-title">商务合作</h3>
+							<div class="info">我们以开放包容的合作理念、创新专业的商务模式、敬业专注的服务态度、真诚地寻求合作伙伴，共同实现我们事业的美好未来。</div>
+						</li>
+					</ul>
 					<div class="btn">MORE</div>
 				</div>
 				<img src="../static/public/images/index/lev_3_pic.png" alt="" class="right">
@@ -239,6 +347,7 @@
 		<div class="left">
 			<div class="link-box">
 				<img src="../static/public/images/commom/link-icon.png" alt="" class="link-icon">
+				<div class="sjx-icon"></div>
 				<ul class="link-list">
 					
 						<li class="item">
@@ -254,7 +363,7 @@
 						</li>
 					
 						<li class="item">
-							<a href=./about.html class = "link">联系我们</a>
+							<a href=./about.html?type=4 class = "link">联系我们</a>
 						</li>
 					
 				</ul>
@@ -263,7 +372,7 @@
 				<h3 class="title">服务热线:</h3>
 				<div class="phone">
 					<img src="../static/public/images/commom/phone-icon.png" alt="" class="phone-icon">
-					<p class="info">400-6020019</p>
+					<p class="info">400-602-0019</p>
 				</div>
 			</div>
 		</div>
@@ -271,20 +380,16 @@
 			<div class="r-left">
 				<div class="gz">
 					<p class = "gz-info">关注我们：</p>
-					<img src="../static/public/images/commom/wb-icon.png" alt="" class="wb">
-					<img src="../static/public/images/commom/wx-icon.png" alt="" class="wx">
+					<img src="../static/public/images/commom/xcx-icon.png" alt="" class="wb">
+					<img src="../static/public/images/commom/gzh-icon.png" alt="" class="wx">
 				</div>
-				<p class="address">公司地址：深圳市前海深港合作区前湾一路1号A栋201</p>
+				<p class="address">公司地址：深圳市南山区南山街道向南社区南山大道1153号天源大厦A栋408</p>
 				<p class="mail">公司邮箱：YTJ@yuntoujing.cn</p>
-			</div>
-			<div class="r-right">
-				<img src="../static/public/images/commom/qr.png" alt="" class="qr">
-				<p class="hint">扫一扫订阅号</p>
 			</div>
 		</div>
 	</div>
 	<div class="link-info">
-		<a class = "info center" href="./a">Copyright©2016 Coordinate Financial Services.All Rights Reserved. 粤ICP备16008904号</a>
+		<a class = "info center" href="./a">Copyright©2019 Coordinate Financial Services.All Rights Reserved. 粤ICP备18138710号-1</a>
 	</div>
 </div>
 

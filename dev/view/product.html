@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=0.1,minimun-scale=1.0,maximum-scale=1.0,user-scalable=no">
 		<title>产品中心</title>
 		<link rel="stylesheet" href=../static/css/product.css>
 	</head>
@@ -12,7 +13,7 @@
 <div class="header">
 	<div class="center">
 		<div class="left">
-			<img class ="img" src="../static/public/images/commom/logo.png" alt="">
+			<img class ="img" src="../static/public/images/commom/logo.png" alt="" id = "logo">
 		</div>
 		<ul class="link-list">
 			
@@ -39,86 +40,67 @@
 		</ul>
 	</div>
 </div>
-<div class="pic"></div>
-<div class="center">
-	<div class="commom-header">
+<div class="animation">
+	<div class="pic"></div>
+	<div class="center">
+		<div class="commom-header">
 	<h3 class="commom-title">产品服务</h3>
-	<p class="commom-hint">Productions & Services</p>
 </div>
-	<div class="main" id = "main">
-		<ul class="list">
+		<div class="main" id="main">
+			<ul class="list">
 	
 		<li class="item">
-			<div class="info">产品系列</div>
+			<div class="info">服务内容</div>
 		</li>
 	
 		<li class="item">
-			<div class="info">服务方式</div>
-		</li>
-	
-		<li class="item">
-			<div class="info">客户体验</div>
+			<div class="info">产品特色</div>
 		</li>
 	
 </ul>
-		<ul class="content" id = "khty">
-			<li class="item">
+			<ul class="content" id="khty">
+				<li class="item">
 	<img src="../static/public/images/product/khty_0.png" alt="" class="item-pic">
-	<h3 class="info-title">免费体验<span class = "info-hint">Free Trail</span></h3>
+	<h3 class="info-title">免费体验</h3>
 	<p class="text">注册微信小程序即可免费获得透镜分，体验我们的数据风控服务;</p>
 </li>
-			<li class="item">
+				<li class="item">
 	<img src="../static/public/images/product/khty_1.png" alt="" class="item-pic">
-	<h3 class="info-title">分享有奖<span class = "info-hint">Share to Win</span></h3>
+	<h3 class="info-title">分享有奖</h3>
 	<p class="text">透镜分不足时，可充值或对外分享云透镜获取透镜分，如对方充值还可获得云币，用于购买透镜分或提现;</p>
 </li>
-			<li class="item">
+				<li class="item">
 	<img src="../static/public/images/product/khty_2.png" alt="" class="item-pic">
-	<h3 class="info-title">人工咨询<span class = "info-hint">Customer Services</span></h3>
+	<h3 class="info-title">人工咨询</h3>
 	<p class="text">如对信息庞杂、专业术语的云透镜分析报告不明白，有专业透镜分析师提供人工咨询。</p>
 </li>
-		</ul>
-		<ul class="content" id = "server">
-			<li class="item">
+			</ul>
+			<ul class="content" id="server">
+				<li class="item">
 	<img src="../static/public/images/product/server_0.png" alt="" class="item-pic">
-	<h3 class="info-title">手机端查询<span class = "info-hint">Mobile inquiry</span></h3>
+	<h3 class="info-title">手机端查询</h3>
 	<p class="text">微信关注“云透镜”小程序，随时随地便捷使用企业透镜、智能透镜查询所需信息，获取专业风控意见; 同时，快捷使用证照透镜识别、管理常用证照材料，随身携带一个属于自己的专用数据库。</p>
 </li>
-			<li class="item">
+				<li class="item">
 	<img src="../static/public/images/product/server_1.png" alt="" class="item-pic">
-	<h3 class="info-title">企业套餐服务<span class = "info-hint">Enterprise package service</span></h3>
+	<h3 class="info-title">企业套餐服务</h3>
 	<p class="text">通过API接口或使用我司云策系统在电脑端查询。根据企业经营情况灵活配置产品套餐，以更优惠的价格、更直观的数据BI、专业透镜师人工咨询，为企业在赊销、投资风险及发票验真、云眼监控等方面提供风险管理工具和建议，为企业随时随地配置一个忠诚专业的风控卫士</p>
 </li>
-			<li class="item">
+				<li class="item">
 	<img src="../static/public/images/product/server_2.png" alt="" class="item-pic">
-	<h3 class="info-title">企业定制化咨询<span class = "info-hint">Customized Consulting</span></h3>
+	<h3 class="info-title">企业定制化咨询</h3>
 	<p class="text">根据企业实际业务需求，由业内资深风控、数据、技术等方面的专家，为企业提供定制化风险管理、数据建模、评分体系等方面的服务，尤其是小微企业经营贷及供应链金融业务。</p>
 </li>
-		</ul>
-		<ul class="content" id = "product">
-			<li class="item">
-	<img src="../static/public/images/product/product_0.png" alt="" class="item-pic">
-	<h3 class="info-title">诚信透镜<span class = "info-hint">Integrity of the lens</span></h3>
-	<p class="text">通过整合企业工商、投资、征信、涉诉、行政、知识产权、财务经营、行业分析等信息，进行多层级、多维度的数据提取、统计、整合、计算、分析后，输出评分结果及决策建议，为企业及个人决策提供专业好帮手。</p>
-</li>
-			<li class="item">
-	<img src="../static/public/images/product/product_1.png" alt="" class="item-pic">
-	<h3 class="info-title">证照透镜<span class = "info-hint">Licenses lens</span></h3>
-	<p class="text">结合人工智能OCR技术，有效识别身份证、银行卡、营业执照、名片、增值税发票等证照凭证，快捷完成验真，进行分类管理，随时便捷调用历史数据，实现无纸化办公，减少案牍劳形。</p>
-</li>
-		</ul>
-	</div>
-	<div class="fy">
-		<ul class="page" id = "page">
-			<li class="item active">首页</li>
-			<li class="item">上一页</li>
-			<li class="item">1</li>
-			<li class="item">2</li>
-			<li class="item">3</li>
-			<li class="item">4</li>
-			<li class="item">5</li>
-			<li class="item">下一页</li>
-		</ul>
+			</ul>
+		</div>
+		<div class="fy">
+			<ul class="page" id="page">
+				<li class="item active">首页</li>
+				<li class="item">上一页</li>
+				<li class="item">1</li>
+				<li class="item">下一页</li>
+			</ul>
+		</div>
 	</div>
 </div>
 <!-- footer-nav栏 -->
@@ -127,6 +109,7 @@
 		<div class="left">
 			<div class="link-box">
 				<img src="../static/public/images/commom/link-icon.png" alt="" class="link-icon">
+				<div class="sjx-icon"></div>
 				<ul class="link-list">
 					
 						<li class="item">
@@ -142,7 +125,7 @@
 						</li>
 					
 						<li class="item">
-							<a href=./about.html class = "link">联系我们</a>
+							<a href=./about.html?type=4 class = "link">联系我们</a>
 						</li>
 					
 				</ul>
@@ -151,7 +134,7 @@
 				<h3 class="title">服务热线:</h3>
 				<div class="phone">
 					<img src="../static/public/images/commom/phone-icon.png" alt="" class="phone-icon">
-					<p class="info">400-6020019</p>
+					<p class="info">400-602-0019</p>
 				</div>
 			</div>
 		</div>
@@ -159,20 +142,16 @@
 			<div class="r-left">
 				<div class="gz">
 					<p class = "gz-info">关注我们：</p>
-					<img src="../static/public/images/commom/wb-icon.png" alt="" class="wb">
-					<img src="../static/public/images/commom/wx-icon.png" alt="" class="wx">
+					<img src="../static/public/images/commom/xcx-icon.png" alt="" class="wb">
+					<img src="../static/public/images/commom/gzh-icon.png" alt="" class="wx">
 				</div>
-				<p class="address">公司地址：深圳市前海深港合作区前湾一路1号A栋201</p>
+				<p class="address">公司地址：深圳市南山区南山街道向南社区南山大道1153号天源大厦A栋408</p>
 				<p class="mail">公司邮箱：YTJ@yuntoujing.cn</p>
-			</div>
-			<div class="r-right">
-				<img src="../static/public/images/commom/qr.png" alt="" class="qr">
-				<p class="hint">扫一扫订阅号</p>
 			</div>
 		</div>
 	</div>
 	<div class="link-info">
-		<a class = "info center" href="./a">Copyright©2016 Coordinate Financial Services.All Rights Reserved. 粤ICP备16008904号</a>
+		<a class = "info center" href="./a">Copyright©2019 Coordinate Financial Services.All Rights Reserved. 粤ICP备18138710号-1</a>
 	</div>
 </div>
 

@@ -20,4 +20,12 @@ $(function(){
 	$("#logo").click(function(){
 		window.location.href = "./index.html"
 	})
+	$("#list_0").on("click"," .new-item",function(){
+		var idx = $("#list_0").find(".new-item").index(this);
+		window.location.href = "./news_gs_"+idx+".html";
+	})
+	$("#list_1").on("click"," .new-item",function(){
+		var idx = $("#list_1").find(".new-item").index(this);
+		window.location.href = "./news_hy_"+idx+".html";
+	})
 })	

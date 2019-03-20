@@ -1,0 +1,64 @@
+<!-- 头部数据 -->
+@@include("../components/commom/c-title.html",{
+"title":"行业新闻",
+"linkSrc" : "../static/css/news-commom.css"
+})
+<!-- header-nav栏 -->
+@@include("../components/commom/header.html",{
+"linkArr" : [{
+"link":"./index.html",
+"name":"首页"
+},
+{
+"link":"./product.html",
+"name":"产品服务"
+},
+{
+"link":"./case.html",
+"name":"案例中心"
+},
+{
+"link":"./news.html",
+"name":"新闻资讯"
+},
+{
+"link":"./about.html",
+"name":"关于我们"
+}]
+})
+<div class="pic">
+	<p class="side center">您的位置：<a href="./news.html" class="mark">新闻资讯/行业新闻</a></p>
+</div>
+<div class="center main">
+	<div class="left">
+		@@include("../components/news-i.html",{
+			"imgSrc":"../static/public/images/linkNews/gs_0.png",
+		"title":"山东和美集团供应链金融风控咨询服务项目启动",
+		"hint0":"",
+		"hint1":"2019/03/16"
+		})
+		<p class="row">2019年1月，云透镜风控专家与金蝶征信合作，为山东和美集团的供应链金融业务提供一系列的信贷操作流程、客户风险建模、贷后管理方案等风控咨询服务。</p>
+		<p class="row">山东和美集团成立于2003年7月，是一家以饲料加工、食品加工、畜禽养殖等为一体的大型现代化农牧集团。现有员工4000余人，在山东、河北、河南、上海等地设置分公司40余家，年销售额逾百亿元，是省级重点农业产业化龙头企业、山东省饲料十强企业。</p>
+		<p class="row">在本次咨询项目中，风控专家与和美供应链金融团队一起走进养殖现场、访谈养殖农户、设计业务流程、培训业务团队、试点落地方案，为和美供应链金融业务控制信用风险、搭建流程框架、夯实业务基础、清晰产品维度、明确工作方向起到了良好助力。</p>
+		<p class="row">2019年3月16日</p>
+	</div>
+	<div class="right">
+		<h3 class="right-title">相关内容</h3>
+		<ul id="list" class = "list">
+			<li class="item">
+				<div class="item-title">山东和美集团供应链金融风控咨询服务项...</div>
+				<div class="item-info">2019年1月，云透镜风控专家与金蝶征信合作，为山东和美集团的供应链金融业务提供一系列的信贷操作流程、</div>
+			</li>
+			<li class="item">
+				<div class="item-title">云透镜与海尔集团旗下万链指数签署战略...</div>
+				<div class="item-info">2019年3月，深圳市云透镜科技有限公司与万链指数(青岛)信息科技有限公司签署战略合作协议，双方将在风险管理咨</div>
+			</li>
+			<li class="item">
+				<div class="item-title">关于iPhone手机付费购买云透镜小程序...</div>
+				<div class="item-info">亲爱的用户，您好！云透镜小程序正式上线，目前只接受安卓手机的购买支付。在苹果（Apple）iOS 系统下，因微信</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script src="../static/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/news_gs_0.js" type="text/javascript" charset="utf-8"></script>

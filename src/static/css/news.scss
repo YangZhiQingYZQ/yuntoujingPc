@@ -47,12 +47,14 @@
 		padding:40px 10px 40px 0;
 		border-bottom:1px solid #e5e5e5;
 		overflow: hidden;
-		&:nth-child(1){
-			border:none;
-		}
 		.item-pic{
+			overflow: hidden;
 			float:left;
 			@include wh(266px,175px);
+			.item-img{
+				display: block;
+				@include wh(100%,100%);
+			}
 		}
 		.info{
 			margin-left:40px;
@@ -70,9 +72,17 @@
 				@include ft(14px,30px,#838383,inherit,100);
 			}
 		}
+		&:hover{
+			.item-img{
+				transform:scale(1.1);
+			}
+			.infos{
+				color:#3887de;
+			}
+		}
 	}
 }
 .fy{
 	margin-left:194px;
-	height:519px;
+	height:300px;
 }

@@ -24,7 +24,7 @@
 				.item-pic{
 					float:left;
 					@include wh(565px,341px);
-					padding:0 40px 40px 0;
+					padding:0 40px 200px 0;
 				}
 				.ov-title{
 					margin-left:605px;
@@ -34,7 +34,7 @@
 					@include ft(18px,28px,#494949);
 				}
 				.info{
-					margin-bottom:21px;
+					margin-bottom:10px;
 				}
 				.b-title{
 					font-weight: 600;
@@ -42,18 +42,25 @@
 			}
 			&:nth-child(2n){
 				background:#EEEEEE;
+				.ov-title{
+					margin:0;
+					margin-bottom:19px;
+					padding-left:13px;
+					border-left:5px solid #3887de;
+					@include ft(18px,28px,#494949);
+				}
 				.ov{
 					.item-pic{
 						float:right;
 						padding:0;
-						padding:8px 0 40px 40px;
+						padding:8px 0 200px 40px;
 					}
 				}
 			}
 			&:nth-child(2n-1){
 				.ov{
 					.item-pic{
-						padding:8px 40px 0 0;
+						padding:8px 40px 200px 0;
 					}
 				}
 				.item-title{
@@ -71,7 +78,7 @@
 				height:532px;
 			}
 			&:nth-child(4){
-				height:522px;
+				height:614px;
 			}
 			&:nth-child(5){
 				height:573px;

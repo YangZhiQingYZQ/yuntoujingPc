@@ -197,17 +197,17 @@ $it:inherit;
 					display: flex;
 					.gz-info{
 						flex:none;
-						line-height:56px;
+						line-height:110px;
 					}
 					.wb{
 						margin-left:19px;
-						@include wh(56px,56px);
+						@include wh(110px,110px);
 						flex:none;
 					}
 					.wx{
 						margin-left:15px;
 						flex:none;
-						@include wh(56px,56px);
+						@include wh(110px,110px);
 					}
 				}
 			}

@@ -1,0 +1,114 @@
+<!-- 头部数据 -->
+@@include("../components/commom/c-title.html",{
+"title":"行业新闻",
+"linkSrc" : "../static/css/news-commom.css"
+})
+<!-- header-nav栏 -->
+@@include("../components/commom/header.html",{
+"linkArr" : [{
+"link":"./index.html",
+"name":"首页"
+},
+{
+"link":"./product.html",
+"name":"产品服务"
+},
+{
+"link":"./case.html",
+"name":"案例中心"
+},
+{
+"link":"./news.html",
+"name":"新闻资讯"
+},
+{
+"link":"./about.html",
+"name":"关于我们"
+}]
+})
+<div class="pic">
+	<p class="side center">您的位置：<a href="./news.html" class="mark">新闻资讯/行业新闻</a></p>
+</div>
+<div class="center main">
+	<div class="left">
+		@@include("../components/news-i.html",{
+		"imgSrc":"../static/public/images/linkNews/hy_1.png",
+		"title":"大数据应用于农业的十大案例",
+		"hint0":"引自：企业观察网",
+		"hint1":"2018/05/29"
+		})
+		<p class="row">基于物联网等技术的应用，农业领域积累了大量的数据，为大数据应用于农业奠定了基础。从国内国际的发展来看，大数据正在驱动农业发展路径发生变化，以提高农业效率，保障食品安全，实现农产品优质优价，农业大数据蕴含着巨大的商业价值。“资本实验室”梳理以大数据等新技术推动农业创新与转型的10家IT服务商，小编转载以为在农业大数据领域探索的朋友们做参考。</p>
+		<p class="row-title">农场云端管理服务商</p>
+		<p class="row">Farmeron 成立于2010年，总部位于美国哥伦布市，旨在为全球农民提供类似于Google
+			Analytics的数据跟踪和分析服务。Farmeron于2011年11月正式推出基于Web端的农场管理工具。农民可在其网站上利用该软件，记录和跟踪自己饲养的畜牧情况（饲料库存、消耗/花费，畜牧出生、死亡、产奶等信息，还有农场的收支信息）。Farmeron的价值在于帮助农场主将碎片化的农业生产记录与信息整合到一起，利用先进的分析工具，为农场主提供有针对性的农场监测分析及生产状况报告，以便于农场主科学地制定农业生产计划。</p>
+		<p class="row">Farmeron已在14个国家建立农业管理平台，为450个农场提供商业监控服务，并与德国畜牧业和农产品物流企业NeelsenAgrar
+			GmbH达成分销合作协议。公司在2012年度获得140万美元种子轮融资后，新近于2014年5月获得270万美元新一轮种子融资。累计融资410万美元。</p>
+		<p class="row-title">土壤抽样分析服务商</p>
+		<p class="row">Solum成立于2009年，总部位于美国硅谷。Solum致力于提供精细化农业服务，目标是帮助农民提高产出、降低成本。其开发的软硬件系统能够实现高效、精准的土壤抽样分析，以帮助种植者在正确的时间、正确的地点进行精确施肥。农民可以通过公司开发的No
+			Wait Nitrate系统在田间地头进行实时分析，即时获取土壤数据；也可以把土壤样本寄给该公司的实验室进行分析。</p>
+		<p class="row">Solum于2012年获得Andreessen Horowitz 领投的1700万美元投资后，已累计融资近2000万美元。</p>
+		<p class="row-title">农场云端管理分析服务平台</p>
+		<p class="row">Granular成立于2014年，总部位于美国旧金山， Granular原公司名称为Solum 。在将公司原有的土壤分析业务出售给孟山都（Monsanto
+			）之后，Granular现在的主营业务是为农民提供农场商业管理软件服务，包括计划、生产、营销、会计四个模块业务。软件最大的亮点在于：能够为农场种植的每个业务环节都提供云端数据分析服务，以辅助农场主决策。如：播种之前，软件会分析包括市场动向、土壤、病虫害、人力成本等各方面因素，判断种植哪些农作物最合适；在收获环节，会自动为农民制定农作物收割时间、注意事项、销售时间等工作计划与安排。</p>
+		<p class="row">Granular于2014年2月获得420万美元投资，由Google Ventures， Khosla Ventures等联合出资，累计融资额2770万美元。</p>
+		<p class="row-title">精准农业/林业航空成像服务商</p>
+		<p class="row">HoneyComb成立于2012年，总部位于美国俄勒冈。HoneyComb利用无人机为农民和林业管理人员提供精准的农业和林业航空成像解决方案，旨在为农场与林业管理带来更高效率。HoneyComb通过分析无人机反馈的图像数据，提取出农作物健康状况和资源分配等有价值信息，并将这些信息生成地图，提供给农民和林业管理人员。相关人员通过地图提供的精准信息，可获得每一块土地的农作物生长状况、病虫害及水分等数据，从而进行相关资源分配，减少人力物力投入的同时，保证产量。</p>
+		<p class="row">HoneyComb于2014年4月获得12。5万美元的债务融资。</p>
+		<p class="row-title">自动化农业技术公司</p>
+		<p class="row">Blue River Technology成立于2011年，总部位于美国森尼维耳市，是一家计算机视觉与机器人公司。Blue River
+			technology通过计算机视觉技术识别可以从农作物中精准地识别出杂草，有选择性地杀死有害植物，从而减少化学农药的使用。该技术特别适用于有机农业生产和耐药性杂草清理。</p>
+		<p class="row">Blue River Technology于2014年3月获得1000万美元A+投资，由Data CollectiveVenture Capital领投， Innovation
+			Endeavors（谷歌执行董事长Eric Schmidt旗下投资机构）与Khosla Ventures跟投。公司目前累计融资1330万美元。</p>
+		<p class="row-title">牧场数据采集监测服务商</p>
+		<p class="row">Silent Herdsman成立于2009年，总部位于英国格拉斯哥市，公司的原名为 　　Embedded Technology Systems（嵌入式技术系统公司）。Silent
+			Herdsman专注于牧场数据采集与监测，服务于奶制品及牛肉生产的农场主。农场主给奶牛脖子上佩戴监测设备，通过无线网络，利用智能手机、平板电脑等设备可以实时监测奶牛生长状况与行为，如健康状况、是否处于发情期等。当发现异常情况时，与Silent
+			Herdsman系统相连接的设备就会发出警报告知农场工作人员。使用该系统可以同时管理规模多达1000头奶牛的农场，通过智能设备及信息系统的辅助，农场管理效率将发生质的改变。</p>
+		<p class="row">Silent Herdsman于2014年3月获得 Scottish Equity Partners （SEP） 领投的300万英镑的投资。</p>
+		<p class="row-title">云端智能农业管理软件</p>
+		<p class="row">FarmLogs成立于2012年，总部位于美国安阿伯市，是创业孵化器Y
+			Combinator孵化的一个项目。FarmLogs提供云端SaaS模式农场管理服务，农民通过桌面WEB界面及移动端App来管理农场。中小农场主可以通过它计划、管理、监测、分析农作物生产过程，通过FarmLogs农场地图信息展示，可以掌握不同作物农作时间、获得每小时的天气信息，还可以及时了解各种农产品的市场价格动态。</p>
+		<p class="row">FarmLogs的突出特点为：农民通过移动终端，如Pad就可以实现上传农场数据，并获取分析结果，使农场管理更加便捷，将农民从原来繁重低效的工作中解放出来。</p>
+		<p class="row">FarmLogs公司CEOJesseVollmar称公司正在开发基于大数据分析，具备智能预测功能的农作物轮作优化的产品。同时也在探索使用低成本的蓝牙设备来监测农业工具在使用过程中的数据，通过实时上传和分析，为农业劳作提供指导。</p>
+		<p class="row">FarmLogs于2014年1月获400万美元A轮融资，由Drive Capital领投，已累计融资500万美元。</p>
+		<p class="row-title">农场云端预警服务商</p>
+		<p class="row">VitalFields成立于2013年，总部位于爱沙尼亚共和国首都塔林。VitalFields的目标是实现农场天气、病害、成本投入的精准预测管理。农民将农场的信息上传至VitalFields云端农场日志中，可以用手机实时查询农场信息，VitalFields通过对农民日志分析，告知农民在农作物生长的每个阶段需要投入的成本、病虫害风险防治及天气预测。使农民能更有效的管理农场，通过成本控制和风险预测管理来提高收益。</p>
+		<p class="row">VitalFields于2014年1月获得50万欧元投资，由SmartCap AS 、TMT Investments、 Wiser Financial Advisors等联合出资。</p>
+		<p class="row-title">大数据意外天气保险公司</p>
+		<p class="row">The Climate Corporation成立于2006年，总部位于美国旧金山。The Climate
+			Corporation是一家为农民提供天气意外保险的公司。该公司通过2500万个远程传感器采集天气数据，同时结合天气模拟技术与大量的植物根部特性与土质特点等信息，并将信息通过地图技术绘制全美国的所有土地气候数据。在综合分析各种数据后，会通过系统推送给农民未来可能会破坏农业生产的极端天气，并推出相对应的保险业务，由农民自由选择合适的保险进行投保，从而使意外天气对农民的损失影响降到最低。</p>
+		<p class="row">The Climate Corporation于2012年6月获得5000万美元C轮融资，由Google Ventures、Founders Fund、Khosla
+			Ventures等联合出资。2013年10月被孟山都（Monsanto）以9.3亿美元收购。　</p>
+		<p class="row-title">农场综合解决方案与食品安全服务商</p>
+		<p class="row">CropIn是一家为农场主提供农场综合解决方案的印度企业。CropIn致力于通过对农场及农作物的科学管理，为消费者提供健康安全的食品，其服务包括两方面：农场生产管理服务和农产品销售及信息追溯服务。农场生产管理系统对已登记的农场进行监测，全程监控农作物生长过程中，种子、化肥、杀虫剂的选择与使用情况，为农作物的生长、病虫害防治等日常工作提供更加科学化的管理和指导。农产品销售及追溯系统通过对农产品分配唯一的ID标识，对农作物在收割、生产、存储、运输、销售全流程的信息进行监控跟踪，确保为消费者提供健康安全的食品。</p>
+		<p class="row-title">关于农业大数据</p>
+		<p class="row">农业大数据是融合了农业地域性、季节性、多样性、周期性等自身特征后产生的来源广泛、类型多样、结构复杂、具有潜在价值，并难以应用通常方法处理和分析的数据集合。它保留了大数据自身具有的规模巨大（volume）、类型多样（variety）、价值密度低（value）、处理速度快（velocity）、精确度高（veracity）和复杂度高（complexity）等基本特征，并使农业内部的信息流得到了延展和深化。</p>
+		<p class="row">根据农业的产业链条划分，目前农业大数据主要集中在农业环境与资源、农业生产、农业市场和农业管理等领域。</p>
+		<p class="row">（1）农业自然资源与环境数据。主要包括土地资源数据、水资源数据、气象资源数据、生物资源数据和灾害数据。</p>
+		<p class="row">（2）农业生产数据包括种植业生产数据和养殖业生产数据。其中，种植业生产数据包括良种信息、地块耕种历史信息、育苗信息、播种信息、农药信息、化肥信息、农膜信息、灌溉信息、农机信息和农情信息；养殖业生产数据主要包括个体系谱信息、个体特征信息、饲料结构信息、圈舍环境信息、疫情情况等。</p>
+		<p class="row">（3）农业市场数据包括市场供求信息、价格行情、生产资料市场信息、价格及利润、流通市场和国际市场信息等。</p>
+		<p class="row">（4）农业管理数据主要包括国民经济基本信息、国内生产信息、贸易信息、国际农产品动态信息和突发事件信息等。</p>
+	</div>
+	<div class="right">
+		<h3 class="right-title">相关内容</h3>
+		<ul id="list" class = "list">
+			<li class="item">
+				<div class="item-title">我国大数据风险管理不容忽视</div>
+				<div class="item-info">当前，我国信息化快速发展，人工智能正以前所未有的速度、广度和深度融入经济社会各个方面，大数据风险管理。</div>
+			</li>
+			<li class="item">
+				<div class="item-title">大数据应用于农业的十大案例</div>
+				<div class="item-info">基于物联网等技术的应用，农业领域积累了大量的数据，为大数据应用于农业奠定了基础。从国内国际的发展来看</div>
+			</li>
+			<li class="item">
+				<div class="item-title">互联网金融的风控必然以数据为核心</div>
+				<div class="item-info">互联网金融平台的风控应该围绕互联网特性展开，而互联网最大的特性就是数据，也就是大家常说的大数据。</div>
+			</li>
+			<li class="item">
+				<div class="item-title">大数据风控在金融领域的应用</div>
+				<div class="item-info">毫无疑义的是我们已经进入大数据时代。大数据已在各行各业中广泛应用，不同的业务场景，不同的数据产品</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script src="../static/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/news_hy_0.js" type="text/javascript" charset="utf-8"></script>

@@ -15,7 +15,8 @@
  	}),
 	lev_list_0 = $("#lev_0_toggle"),
 	toggle_lev0 = $(".lev-0 .a_toggle"),
-	lev_list_1 = $(".lev-0 .a_toggle"),
+	lev_list_1 = $(".lev-0 #lev-0-list"),
+	lev_list_2 = $(".lev-0 #lev-0-list1"),
 	lev_2_nav = $("#lev_2_nav"),
 	lev_2_center = $(".lev-2 .ov"),
 	lev_3_nav = $("#lev_3_nav"),
@@ -40,6 +41,17 @@
 	})
 	lev_list_1.on("click",".item",function(){
 		var idx = lev_list_1.find(".item").index(this);
+		switch(idx){
+			case 0:
+				return window.location.href = "../view/product.html?type=0";
+			case 1:
+				return window.location.href = "../view/product.html?type=0";
+			case 2:
+				return window.location.href = "../view/product.html?type=0";
+		}
+	})
+	lev_list_2.on("click",".item",function(){
+		var idx = lev_list_2.find(".item").index(this);
 		switch(idx){
 			case 0:
 				return window.location.href = "../view/product.html?type=1";

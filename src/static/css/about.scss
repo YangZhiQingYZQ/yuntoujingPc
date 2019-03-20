@@ -42,10 +42,12 @@
 		}	
 	}
 	.toggle{
+
 		display: none;
 		float:right;
 		overflow: hidden;
 		&:last-child{
+			margin-right:177px;
 			padding-bottom:100px;
 		}
 		.pic{
@@ -79,7 +81,6 @@
 		.centers{
 			padding-top:66px;
 			overflow: hidden;
-			
 			.us{
 				float:left;
 				@include wh(200px,auto);

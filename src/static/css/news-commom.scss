@@ -66,6 +66,11 @@
 				.item-info{
 					@include ft(12px,28px,#909090);
 				}
+			&:hover{
+				.item-info{
+					color:#3887DE;
+					}
+			}
 			}
 		}
 	}

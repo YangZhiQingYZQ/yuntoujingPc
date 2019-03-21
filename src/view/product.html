@@ -27,6 +27,10 @@
 }]
 })
 <div class="animation">
+	<div id="one"></div>
+	<div id="tow"></div>
+	<div id="three"></div>
+	<div class="one"></div>
 	<div class="pic"></div>
 	<div class="center">
 		@@include("../components/commom/title.html",{
@@ -37,23 +41,7 @@
 			@@include("../components/commom/list.html",{
 			"li_arr" : ["服务内容","产品特色"]
 			})
-			<ul class="content" id="khty">
-				@@include("../components/product-item.html",{
-				"imgSrc":"../static/public/images/product/khty_0.png",
-				"title":"免费体验",
-				"info":"注册微信小程序即可免费获得透镜分，体验我们的数据风控服务;"
-				})
-				@@include("../components/product-item.html",{
-				"imgSrc":"../static/public/images/product/khty_1.png",
-				"title":"分享有奖",
-				"info":"透镜分不足时，可充值或对外分享云透镜获取透镜分，如对方充值还可获得云币，用于购买透镜分或提现;"
-				})
-				@@include("../components/product-item.html",{
-				"imgSrc":"../static/public/images/product/khty_2.png",
-				"title":"人工咨询",
-				"info":"如对信息庞杂、专业术语的云透镜分析报告不明白，有专业透镜分析师提供人工咨询。"
-				})
-			</ul>
+			
 			<ul class="content" id="server">
 				@@include("../components/product-item.html",{
 				"imgSrc":"../static/public/images/product/server_0.png",
@@ -69,6 +57,23 @@
 				"imgSrc":"../static/public/images/product/server_2.png",
 				"title":"企业定制化咨询",
 				"info":"根据企业实际业务需求，由业内资深风控、数据、技术等方面的专家，为企业提供定制化风险管理、数据建模、评分体系等方面的服务，尤其是小微企业经营贷及供应链金融业务。"
+				})
+			</ul>
+			<ul class="content" id="khty">
+				@@include("../components/product-item.html",{
+				"imgSrc":"../static/public/images/product/khty_0.png",
+				"title":"免费体验",
+				"info":"注册微信小程序即可免费获得透镜分，体验我们的数据风控服务;"
+				})
+				@@include("../components/product-item.html",{
+				"imgSrc":"../static/public/images/product/khty_1.png",
+				"title":"分享有奖",
+				"info":"透镜分不足时，可充值或对外分享云透镜获取透镜分，如对方充值还可获得云币，用于购买透镜分或提现;"
+				})
+				@@include("../components/product-item.html",{
+				"imgSrc":"../static/public/images/product/khty_2.png",
+				"title":"人工咨询",
+				"info":"如对信息庞杂、专业术语的云透镜分析报告不明白，有专业透镜分析师提供人工咨询。"
 				})
 			</ul>
 		</div>

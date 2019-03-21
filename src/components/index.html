@@ -60,7 +60,7 @@
 			<div class="swiper-wrapper">
 				@@for(var i = 0; lev_1_arr.length > i ; i++){
 				<div class="item swiper-slide">
-					<a href="./case.html" class="link"></a>
+					<!-- <a href=`+lev_1_arr2[i]+` class="link"></a> -->
 					<div class="img-box">
 						<img src=`+lev_1_imgArr[i]+` class="img" />
 					</div>
@@ -84,7 +84,7 @@
 			<li class="item">`+lev_2_arr[i]+`</li>
 			}
 		</ul>
-		<div class="center ov">
+		<div class="center ov" id = "news_0">
 			<div class="left">
 				<div class="pic-box">
 					<img src="@@lev_2_img1" alt="" class="pic">
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="center ov">
+		<div class="center ov" id = "news_1">
 			<div class="left">
 				<div class="pic-box">
 					<img src="@@lev_2_img" alt="" class="pic">

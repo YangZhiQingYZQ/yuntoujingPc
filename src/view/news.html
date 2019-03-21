@@ -26,7 +26,11 @@
 "name":"关于我们"
 }]
 })
+<div class="animation">
 <div class="pic"></div>
+<div id="one"></div>
+<div id="tow"></div>
+<div id="three"></div>
 <div class="center">
 	@@include("../components/commom/title.html",{
 		"title":"新闻资讯",
@@ -57,7 +61,6 @@
 			})
 		</ul>
 		<ul class="content" id = "list_1">
-			
 				@@include("../components/news-item.html",{
 					"imgSrc":"../static/public/images/news/pic_0.png",
 					"title":"我国大数据风险管理不容忽视",
@@ -93,6 +96,7 @@
 			<li class="item">下一页</li>
 		</ul>
 	</div>
+</div>
 </div>
 <!-- footer-nav栏 -->
 @@include("../components/commom/footer.html",{

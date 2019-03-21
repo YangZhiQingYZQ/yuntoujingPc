@@ -5,13 +5,20 @@
 }
 .main{	
 	.commom-header{
-		border:none;
+		box-sizing: border-box;
+		height: 100px;
+		border: none;
 	}
 	.list{
 		.case-item{
+			position:relative;
 			padding-top:60px;
 			overflow: hidden;
 			background:white;
+			.pn{
+				position:absolute;
+				top:-90px;
+			}
 			.item-title{
 				margin-bottom:15px;
 				padding-left:13px;
@@ -23,8 +30,8 @@
 				@include ft(14px,30px,#494949);
 				.item-pic{
 					float:left;
-					@include wh(565px,341px);
-					padding:0 40px 200px 0;
+					@include wh(565px,360px);
+					padding:0 40px 0 0;
 				}
 				.ov-title{
 					margin-left:605px;
@@ -52,15 +59,17 @@
 				.ov{
 					.item-pic{
 						float:right;
-						padding:0;
-						padding:8px 0 200px 40px;
+						padding-right:0;
+						padding-top:8px;
+						padding-left:40px;
 					}
 				}
 			}
 			&:nth-child(2n-1){
 				.ov{
 					.item-pic{
-						padding:8px 40px 200px 0;
+						padding-top:8px;
+						padding-right: 40px;
 					}
 				}
 				.item-title{
@@ -68,20 +77,31 @@
 				}
 			}
 			&:nth-child(1){
-				padding-top:0px;
-				height:517px;
+				.item-pic{
+					height:400px;
+					padding-bottom:167px;
+				}
 			}
 			&:nth-child(2){
-				height:522px;
+				.item-pic{
+					padding-bottom:111px;
+				}
 			}
 			&:nth-child(3){
-				height:532px;
+				.item-pic{
+					padding-bottom:91px;
+				}
 			}
 			&:nth-child(4){
-				height:614px;
+				.item-pic{
+					height:400px;
+					padding-bottom:141px;
+				}
 			}
 			&:nth-child(5){
-				height:573px;
+				.item-pic{
+					padding-bottom:121px;
+				}
 			}
 		}	
 	}

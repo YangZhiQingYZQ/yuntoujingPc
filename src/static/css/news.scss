@@ -4,6 +4,18 @@
 	height:260px;
 	background: url("../public/images/news/banner.png") top center no-repeat;
 }
+#one,#tow,#three{
+	position:absolute;
+}
+#one{
+	top:568px;
+}
+#tow{
+	top:824px;
+}
+#three{
+	top:1000px;
+}
 .main{
 	overflow: hidden;
 	padding-top:34px;
@@ -85,4 +97,12 @@
 .fy{
 	margin-left:194px;
 	height:300px;
+}
+.animation{
+	animation: myfirst 1s ease;
+}
+@keyframes myfirst
+{
+from {margin-top:100px;opacity: 0;}
+to {margin-top:0;opacity: 1;}
 }

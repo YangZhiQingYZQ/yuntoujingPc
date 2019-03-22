@@ -33,7 +33,7 @@ $(function() {
 		var idx = $("#swiper-lev").find(".item").index(this);
 		switch (idx % 5) {
 			case 0:
-				return window.location.href = "../view/case.html#five";
+				return window.location.href = "../view/case.html#four";
 			case 1:
 				return window.location.href = "../view/case.html#one";
 			case 2:
@@ -41,7 +41,7 @@ $(function() {
 			case 3:
 				return window.location.href = "../view/case.html#three";
 			case 4:
-				return window.location.href = "../view/case.html#four";
+				return window.location.href = "../view/case.html#five";
 		}
 	})
 	$(".header .link-list .item a").eq(0).addClass("active");

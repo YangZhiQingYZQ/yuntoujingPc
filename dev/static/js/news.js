@@ -6,7 +6,7 @@ $(function(){
 		list = main.find(".list"),
 		page = $("#page"),
 		content = main.find(".content");
-		content.eq(0).show();
+		content.eq(idx?idx:0).show().siblings().hide();
 		list.show().find(".item").eq(idx?idx:0).addClass("active");
 	list.on("click", "li", function() {
 		var idx = list.find("li").index(this);

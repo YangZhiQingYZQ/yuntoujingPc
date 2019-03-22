@@ -1,4 +1,7 @@
 $(function() {
+	$("#logo").click(function(){
+		return window.location.href = "./index.html"
+	})
 	$("#list").on("click", ".item", function() {
 		var arr = [
 			"./news_hy_0.html",

@@ -40,6 +40,9 @@
 
 		.row {
 			@include ft(14px, 24px, #909090);
+			&.t-right{
+				text-align: right;
+			}
 		}
 
 		.row-title1 {
@@ -74,4 +77,8 @@
 			}
 		}
 	}
+}
+.imgs{
+	margin-top:-30px;
+	@include wh(283px,385px);
 }

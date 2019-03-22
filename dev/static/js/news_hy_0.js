@@ -13,3 +13,4 @@ $(function() {
 		window.location.href = arr[idx];
 	})
 })
+d
